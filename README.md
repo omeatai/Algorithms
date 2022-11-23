@@ -59,7 +59,9 @@ const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
 Python:
 
 ```py
-
+def flip(d, a):
+    a.sort() if d=='R' else a.sort(reverse=True)
+    return a
 ```
 
 </details>
