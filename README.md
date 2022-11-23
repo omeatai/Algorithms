@@ -64,6 +64,11 @@ def flip(d, a):
     return a
 ```
 
+```py
+def flip(d,a):
+    return sorted(a, reverse=d=='L')
+```
+
 </details>
 
 <details>
