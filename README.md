@@ -56,10 +56,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -93,10 +89,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -129,10 +121,6 @@ Python:
   <summary>4. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -171,10 +159,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -211,10 +195,6 @@ Python:
   <summary>6. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -253,10 +233,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -293,10 +269,6 @@ Python:
   <summary>8. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -335,10 +307,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -375,10 +343,6 @@ Python:
   <summary>10. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -417,10 +381,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -457,10 +417,6 @@ Python:
   <summary>12. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -499,10 +455,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -539,10 +491,6 @@ Python:
   <summary>14. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -581,10 +529,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -621,10 +565,6 @@ Python:
   <summary>16. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -663,10 +603,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -703,10 +639,6 @@ Python:
   <summary>18. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
@@ -745,10 +677,6 @@ Python:
 
 Question:
 
-```md
-
-```
-
 Example:
 
 ```md
@@ -785,10 +713,6 @@ Python:
   <summary>20. sample</summary>
 
 Question:
-
-```md
-
-```
 
 Example:
 
