@@ -40,7 +40,20 @@ Solution:
 JavaScript:
 
 ```js
-const flip = (d, a) => (d === "R" ? a.sort() : a.sort().reverse());
+const flip = (d, a) =>
+  d === "R"
+    ? a.sort(function (a, b) {
+        return a - b;
+      })
+    : a
+        .sort(function (a, b) {
+          return a - b;
+        })
+        .reverse();
+```
+
+```js
+const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
 ```
 
 Python:
