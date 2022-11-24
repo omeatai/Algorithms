@@ -95,7 +95,9 @@ Example:
 Console:
 
 ```js
-
+function sameCase(a, b) {
+  return 0;
+}
 ```
 
 Solution:
@@ -121,7 +123,25 @@ function sameCase(a, b) {
 ```
 
 ```js
+function sameCase(a, b){
+  const alphabets = /[a-z]/i;
+  const lower = /[a-z]/;
+  const upper = /[A-Z]/;
 
+  if(!a.match(alphabets) || !b.match(/[a-z]/i)){
+    return -1
+  }else if(a.match(lower) && b.match(lower) || a.match(upper) && b.match(upper)){
+    return 1
+  }else{
+    return 0;
+  }
+```
+
+```js
+sameCase = (a, b) =>
+  /[a-z]/i.test(a) && /[a-z]/i.test(b)
+    ? Number(/[a-z]/.test(a) == /[a-z]/.test(b))
+    : -1;
 ```
 
 Python:
