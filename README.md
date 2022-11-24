@@ -72,14 +72,24 @@ def flip(d,a):
 </details>
 
 <details>
-  <summary>2. sample</summary>
+  <summary>2. Check same case</summary>
 
 Question:
+
+Write a function that will check if two given characters are the same case.
+
+If either of the characters is not a letter, return -1
+If both characters are the same case, return 1
+If both characters are letters, but not the same case, return 0
 
 Example:
 
 ```md
+'a' and 'g' returns 1
 
+'A' and 'C' returns 1
+
+'b' and 'G' returns 0
 ```
 
 Console:
@@ -91,6 +101,24 @@ Console:
 Solution:
 
 JavaScript:
+
+```js
+function sameCase(a, b) {
+  if (
+    a.toLowerCase() === a.toUpperCase() ||
+    b.toLowerCase() === b.toUpperCase()
+  ) {
+    return -1;
+  } else if (
+    (a === a.toUpperCase() && b === b.toUpperCase()) ||
+    (a === a.toLowerCase() && b === b.toLowerCase())
+  ) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+```
 
 ```js
 
