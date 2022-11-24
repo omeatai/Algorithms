@@ -138,10 +138,11 @@ function sameCase(a, b){
 ```
 
 ```js
-sameCase = (a, b) =>
-  /[a-z]/i.test(a) && /[a-z]/i.test(b)
+function sameCase(a, b) {
+  return /[a-z]/i.test(a) && /[a-z]/i.test(b)
     ? Number(/[a-z]/.test(a) == /[a-z]/.test(b))
     : -1;
+}
 ```
 
 Python:
