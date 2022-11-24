@@ -159,7 +159,7 @@ def same_case(a, b):
 
 ```py
 def same_case(a, b):
-    return a.isupper() == b.isupper() if a.isalpha() and b.isalpha() else -1
+    return int(a.isupper() == b.isupper()) if a.isalpha() and b.isalpha() else -1
 ```
 
 </details>
