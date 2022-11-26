@@ -200,7 +200,9 @@ When x1 == x2, this means the root has the multiplicity of two.
 Console:
 
 ```js
-
+function quadratic(x1, x2) {
+  return [1, 0, 0];
+}
 ```
 
 Solution:
