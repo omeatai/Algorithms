@@ -229,15 +229,15 @@ function quadratic(x1, x2) {
 Python:
 
 ```py
-
+def quadratic(x1, x2):
+    return (1,-(x2+x1),(x1 * x2))
 ```
 
 ```py
+import numpy as np
 
-```
-
-```py
-
+def quadratic(*args):
+    return tuple(np.poly(args))
 ```
 
 </details>
