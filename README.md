@@ -243,24 +243,20 @@ def quadratic(*args):
 </details>
 
 <details>
-  <summary>4. sample</summary>
+  <summary>4. Quarter of the year</summary>
 
 Question:
 
-Example:
+Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
 
-```md
-
-```
+For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; and month 11 (November), is part of the fourth quarter.
 
 Console:
 
 ```js
-
-```
-
-```js
-
+const quarterOf = (month) => {
+  // Your code here
+};
 ```
 
 Solution:
@@ -268,10 +264,28 @@ Solution:
 JavaScript:
 
 ```js
+const quarterOf = (month) => {
+  if (month <= 3) {
+    return 1;
+  } else if (month <= 6) {
+    return 2;
+  } else if (month <= 9) {
+    return 3;
+  } else {
+    return 4;
+  }
+};
+```
 
+```js
+const quarterOf = (month) => Math.ceil(month / 3);
 ```
 
 Python:
+
+```py
+
+```
 
 ```py
 
