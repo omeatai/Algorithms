@@ -304,7 +304,7 @@ def quarter_of(month):
 </details>
 
 <details>
-  <summary>5. sample</summary>
+  <summary>5. A wolf in sheep's clothing</summary>
 
 Question:
 
