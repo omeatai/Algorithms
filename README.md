@@ -396,24 +396,37 @@ def warn_the_sheep(queue):
 </details>
 
 <details>
-  <summary>6. sample</summary>
+  <summary>6. Closest elevator</summary>
 
 Question:
+
+Given 2 elevators (named "left" and "right") in a building with 3 floors (numbered 0 to 2), write a function elevator accepting 3 arguments (in order):
+
+left - The current floor of the left elevator
+right - The current floor of the right elevator
+call - The floor that called an elevator
+It should return the name of the elevator closest to the called floor ("left"/"right").
+
+In the case where both elevators are equally distant from the called floor, choose the elevator to the right.
+
+You can assume that the inputs will always be valid integers between 0-2.
 
 Example:
 
 ```md
-
+elevator(0, 1, 0) # => "left"
+elevator(0, 1, 1) # => "right"
+elevator(0, 1, 2) # => "right"
+elevator(0, 0, 0) # => "right"
+elevator(0, 2, 1) # => "right"
 ```
 
 Console:
 
 ```js
-
-```
-
-```js
-
+function elevator(left, right, call) {
+  // code on! :)
+}
 ```
 
 Solution:
@@ -421,13 +434,38 @@ Solution:
 JavaScript:
 
 ```js
+function elevator(left, right, call) {
+  //Conditions that favours left lift:
+  const condition1 = left === call && right !== call;
+  const condition2 = call < left && left < right;
+  const condition3 = call > left && left > right;
+  if (condition1 || condition2 || condition3) {
+    return "left";
+  } else {
+    return "right";
+  }
+}
+```
 
+```js
+const elevator = (left, right, call) =>
+  Math.abs(call - left) < Math.abs(call - right) ? "left" : "right";
 ```
 
 Python:
 
 ```py
+def elevator(left, right, call):
+    condition1 = left == call and not right == call
+    condition2 = call < left and left < right
+    condition3 = call > left and left > right
 
+    return "left" if condition1 or condition2 or condition3 else "right"
+```
+
+```py
+def elevator(left, right, call):
+    return "left" if abs(call-left) < abs(call-right) else "right"
 ```
 
 </details>
