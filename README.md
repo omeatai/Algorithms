@@ -334,11 +334,7 @@ Output: "Pls go away and stop eating my sheep"
 Console:
 
 ```js
-
-```
-
-```js
-
+function warnTheSheep(queue) {}
 ```
 
 Solution:
