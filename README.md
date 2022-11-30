@@ -377,11 +377,20 @@ function warnTheSheep(queue) {
 Python:
 
 ```py
-
+def warn_the_sheep(queue):
+    queue.reverse()
+    position = queue.index("wolf")
+    if position == 0:
+        return "Pls go away and stop eating my sheep"
+    else:
+        return f"Oi! Sheep number {position}! You are about to be eaten by a wolf!"
 ```
 
 ```py
-
+def warn_the_sheep(queue):
+    queue.reverse()
+    position = queue.index("wolf")
+    return "Pls go away and stop eating my sheep" if position == 0 else f"Oi! Sheep number {position}! You are about to be eaten by a wolf!"
 ```
 
 </details>
