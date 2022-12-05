@@ -560,24 +560,23 @@ def points(games):
 </details>
 
 <details>
-  <summary>8. sample</summary>
+  <summary>8. Pillars</summary>
 
 Question:
 
-Example:
+There are pillars near the road. The distance between the pillars is the same and the width of the pillars is the same. Your function accepts three arguments:
 
-```md
-
-```
+number of pillars (≥ 1);
+distance between pillars (10 - 30 meters);
+width of the pillar (10 - 50 centimeters).
+Calculate the distance between the first and the last pillar in centimeters (without the width of the first and last pillar).
 
 Console:
 
 ```js
-
-```
-
-```js
-
+function pillars(numPill, dist, width) {
+  // your code here
+}
 ```
 
 Solution:
@@ -585,36 +584,50 @@ Solution:
 JavaScript:
 
 ```js
+function pillars(numPill, dist, width) {
+  return numPill === 1
+    ? 0
+    : (numPill - 1) * (dist * 100) + width * (numPill - 2);
+}
+```
 
+```js
+function pillars(numPill, dist, width) {
+  return (numPill - 1) * (dist * 100) + Math.max(numPill - 2, 0) * width;
+}
 ```
 
 Python:
 
 ```py
+def pillars(num_pill, dist, width):
+    return 0 if num_pill == 1 else (num_pill-1)*(dist*100) + (num_pill-2)*width
+```
 
+```py
+def pillars(n, dist, width):
+    return (n-1) * dist * 100 + max(n-2, 0) * width
 ```
 
 </details>
 
 <details>
-  <summary>9. sample</summary>
+  <summary>9. Twice as old</summary>
 
 Question:
 
-Example:
+Your function takes two arguments:
 
-```md
-
-```
+current father's age (years)
+current age of his son (years)
+Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.
 
 Console:
 
 ```js
-
-```
-
-```js
-
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+}
 ```
 
 Solution:
@@ -622,13 +635,42 @@ Solution:
 JavaScript:
 
 ```js
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let dadAge = dadYearsOld - sonYearsOld;
+  let sonAge = 0;
 
+  dadAge++;
+  sonAge++;
+  while True:
+  (dadAge / 2 !== sonAge);
+  return Math.abs(dadYearsOld - dadAge);
+}
+```
+
+```js
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
 ```
 
 Python:
 
 ```py
+def twice_as_old(dad_years_old, son_years_old):
+    dad_age = dad_years_old - son_years_old
+    son_age = 0
 
+    while True:
+        dad_age += 1
+        son_age += 1
+        if dad_age/2 == son_age:
+            break
+    return abs(dad_years_old-dad_age)
+```
+
+```py
+def twice_as_old(dad_years_old, son_years_old):
+    return abs(dad_years_old - 2*son_years_old)
 ```
 
 </details>
