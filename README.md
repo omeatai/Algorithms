@@ -493,13 +493,13 @@ our team always plays 10 matches in the championship
 0 <= x <= 4
 0 <= y <= 4
 
-Example:
-
-```md
-
-```
-
 Console:
+
+```js
+function points(games) {
+  return 0;
+}
+```
 
 Solution:
 
