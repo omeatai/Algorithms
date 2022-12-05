@@ -540,15 +540,21 @@ const points = (games) =>
 Python:
 
 ```py
-
+def points(games):
+    total = 0
+    for x in games:
+        if x[0]>x[2]:
+            total += 3
+        elif x[0]==x[2]:
+            total += 1
+        else:
+            pass
+    return total
 ```
 
 ```py
-
-```
-
-```py
-
+def points(games):
+	return sum([3 if x[0]>x[2] else 1 if x[0]==x[2] else 0 for x in games])
 ```
 
 </details>
