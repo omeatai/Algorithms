@@ -676,7 +676,7 @@ def twice_as_old(dad_years_old, son_years_old):
 </details>
 
 <details>
-  <summary>10. sample</summary>
+  <summary>10. Total pressure calculation</summary>
 
 Question:
 
