@@ -639,10 +639,10 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   let dadAge = dadYearsOld - sonYearsOld;
   let sonAge = 0;
 
-  dadAge++;
-  sonAge++;
-  while True:
-  (dadAge / 2 !== sonAge);
+  while (dadAge / 2 !== sonAge) {
+    dadAge++;
+    sonAge++;
+  }
   return Math.abs(dadYearsOld - dadAge);
 }
 ```
